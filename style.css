@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+button{
+    cursor: pointer;
+}
+
+/* ...............Header-top............ */
+.header-one {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px;
+}
+.header-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: rgb(55, 153, 233);
+}
+.header-left h3{
+    font-size: 2rem;
+}
+.header-left img {
+  height: 20px;
+}
+.header-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+}
+.header-right1 {
+  position: relative;
+}
+.header-right1 summary {
+  cursor: pointer;
+}
+.header-right1 summary ::-webkit-details-marker {
+  display: none;
+}
+.header-right1 ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  
+}
+.header-right1 li{
+    padding: 5px 20px;
+}
+.header-right1 details[open] ul {
+  display: block;
+}
+.header-right2 {
+  position: relative;
+}
+#menu-toggle {
+  display: none;
+}
+.menu-btn {
+  display: inline-block;
+  cursor: pointer;
+  height: 22px;
+  width: 30px;
+  position: relative;
+}
+.menu-btn span {
+  display: block;
+  height: 4px;
+  background: #333;
+  transition: 0.3s;
+  margin: 4px 0;
+}
+#menu-toggle:checked + .menu-btn .bar1 {
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+#menu-toggle:checked + .menu-btn .bar2 {
+  opacity: 0;
+}
+#menu-toggle:checked + .menu-btn .bar3 {
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+.header-right2 nav {
+  position: fixed;
+  top: 75px;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+  width: 100%;
+}
+#menu-toggle:checked ~ .menu-btn + nav {
+  display: block;
+}
+.header-right2 nav ul{
+    padding-left: 20px;
+    margin: 0;
+}
+.header-right2 nav li{
+    margin: 10px 0;
+}
+.header-right2 nav a{
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.header-right2 nav a :hover{
+    color: #3498db;
+}
+
+/* ...............header-button........ */
+.header-two{
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 1.5rem;
+}
+.header-two1 h1{
+    margin-bottom: 40px;
+    font-size: 3rem;
+}
+.header-two2{
+    margin-top: 40px;
+}
+.header-two2 input{
+    height: 40px;
+    width: 50%;
+}
+
+/* ............Main............. */
+.main-tete{
+    padding: 20px;
+}
+.main-top button{
+    border: none;
+    background: none;
+    text-transform: capitalize;
+    padding: 20px 0;
+    font-size: 1.5rem;
+}
