@@ -18,7 +18,7 @@ img {
   right: 20px;
   width: 60px;
   height: 60px;
-  background: rgb(23, 129, 23);
+  background: rgba(23, 129, 23, 0.685);
   border-radius: 50%;
   box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.3);
   cursor: pointer;
@@ -32,6 +32,7 @@ img {
   height: 100%;
   object-fit: cover;
   display: block;
+  object-position: center;
 }
 .bulle::before{
   content: "";
