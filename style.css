@@ -9,7 +9,8 @@ a {
   color: black;
 }
 button,
-img {
+img, li, img {
+  user-select: none;
   cursor: pointer;
 }
 .bulle{
