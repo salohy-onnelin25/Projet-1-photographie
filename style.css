@@ -40,7 +40,6 @@ img {
   font-weight: bold;
 }
 .bulle:hover{
-  background: greenyellow;
   transform: scale(1.1);
   transition: 0.2s;
 }
@@ -157,7 +156,6 @@ img {
 .header-right2 nav a :hover {
   color: #3498db;
 }
-
 /* ...............header-button........ */
 .header-two {
   background-color: green;
@@ -167,8 +165,9 @@ img {
   font-size: 1.5rem;
 }
 .header-two1 h1 {
-  margin: 40px 0;
+  margin: 170px 0 40px 0;
   font-size: 3rem;
+  text-transform: uppercase;
 }
 .header-two1 p {
   line-height: 1.5;
