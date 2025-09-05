@@ -12,13 +12,44 @@ button,
 img {
   cursor: pointer;
 }
+.bulle{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  background: rgb(23, 129, 23);
+  border-radius: 50%;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bulle::before{
+  content: "S.O";
+  color: black;
+  font-size: 32px;
+  font-weight: bold;
+}
+.bulle:hover{
+  background: greenyellow;
+  transform: scale(1.1);
+  transition: 0.2s;
+}
 
 /* ...............Header-top............ */
 .header-one {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: white;
+  width: 100%;
+  padding: 20px;
 }
 .header-left {
   display: flex;
@@ -129,7 +160,7 @@ img {
   font-size: 1.5rem;
 }
 .header-two1 h1 {
-  margin-bottom: 40px;
+  margin: 40px 0;
   font-size: 3rem;
 }
 .header-two1 p {
